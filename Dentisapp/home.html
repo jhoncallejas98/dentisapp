@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentisapp Home</title>
+    <link rel="stylesheet" href="./css/home.css">
+
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+        <nav class="navbar">
+        <!-- IZQUIERDA -->
+        <div class="navbar__left">
+            <a class="logo-site" href="#">DentisApp</a>
+        </div>
+        <!-- CENTRO -->
+        <div class="navbar__center">
+            <ul class="menu">
+            <li class="menu-item item item-1">
+                <a class="menu-link link link-1 btn btn-secondary" href="#">Nuevo paciente</a>
+            </li>
+            <li class="menu-item item item-2">
+                <a class="menu-link link link-2 btn btn-secondary" href="#">Paciente</a>
+            </li>
+            <li class="menu-item item item-3">
+                <a class="menu-link link link-3 btn btn-secondary" href="#">Citas</a>
+            </li>
+            </ul>
+            <form class="search-bar">
+                <input type="text" class="search-input" placeholder="🔍 Buscar paciente...">
+                <button type="submit" class="search-button">Buscar</button>
+            </form>
+        </div>
+    </header>
+    <div class="left-rigth">
+        <aside class="aside-bar">
+            <h2>Bienvenido a Dentisapp</h2>
+            <h3>Nombre del odontologo</h3>
+            <img src="./images/img-perfil.png" alt="Imagen de perfil" class="profile-image">
+            <p>Nombre de la clinica</p>
+            <p>Direccion de la clinica</p>
+            <p>Telefono de la clinica</p>
+            <p>Correo de la clinica</p>
+            <ul class="configuration">
+                <li><a href="#">Configuracion</a></li>
+                <li><a href="#">Cerrar sesion</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div class="title-patiente">
+                <h2>Pacientes</h2>
+            </div>
+            <div class="table-patiente">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Documento</th>
+                        <th>Edad</th>
+                        <th>Sexo</th>
+                        <th>Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Pérez</td>
+                        <td>12345678</td>
+                        <td>35</td>
+                        <td>M</td>
+                        <td>3001234567</td>
+                    </tr>
+                    <tr>
+                        <td>Laura</td>
+                        <td>García</td>
+                        <td>87654321</td>
+                        <td>28</td>
+                        <td>F</td>
+                        <td>3109876543</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+   
+    <footer>
+        <p>&copy; 2025 Dentisapp. All rights reserved.</p>
+    </footer>
+</body>
+</html>
