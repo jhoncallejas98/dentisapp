@@ -222,19 +222,38 @@ footer {
 .aside-tiles {
     display: flex;
     margin-left: 1rem;
-}
-.aside-tiles:hover {
-    background-color: #f0f0f0;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
     border-radius: 8px;
-    padding: 1rem;
     transition: all 0.3s ease;
 }
+
+.aside-tiles:hover {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.aside-tiles.active {
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
 .logos-aside {
     width: 2rem;
     height: 2rem;
-    align-self: anchor-center;
-    margin-bottom: 8px;
+    align-self: center;
+    margin-right: 0.5rem;
 }
+
+.aside-tiles.active .logos-aside path {
+    fill: white;
+}
+
 .background-table {
     background-color: #F0F0F0;
     border-radius: 8px;
