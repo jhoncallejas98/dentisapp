@@ -3,6 +3,10 @@ body {
     font-family: "Inter", sans-serif;
     width: 100%;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 .header {
@@ -51,6 +55,8 @@ body {
     border-radius: 2rem;
     padding: 0.3rem 0.6rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    width: 27rem;
+    height: 2.7rem;
 }
 
 .search-input {
@@ -81,6 +87,8 @@ body {
 .left-rigth {
     display: flex;
     gap: 4rem;
+    flex: 1 0 auto;
+    width: 100%;
 }
 
 .aside-bar {
@@ -89,18 +97,23 @@ body {
     gap: 0.5rem;
     background-color: #F0F0F0;
     width: 25%;
+    min-width: 300px;
 }
 
 .aside-bar h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: justify;
+    margin-left: 1rem;
 }
 
 .aside-bar h3 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: justify;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 .profile-image {
     width: 60%;
@@ -147,7 +160,7 @@ body {
 }
 
 main {
-    flex: 1; 
+    flex: 1 0 auto;
     width: 100%; 
     box-sizing: border-box;
 }
@@ -155,7 +168,8 @@ main {
 .table-patiente {
     display: flex;
     gap: 4rem;
-    width: 97%;
+    justify-self: center;
+    width: 100%;
 }
 table {
     width: 100%; 
@@ -165,12 +179,15 @@ table {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px; 
     overflow: hidden; 
+    min-width: 600px;
+    max-width: 100%;
 }
 
 th, td {
     padding: 1.2rem; 
     text-align: left;
     border-bottom: 1px solid #e0e0e0; 
+    white-space: nowrap;
 }
 
 thead {
@@ -181,8 +198,106 @@ tbody tr:hover {
     background-color: #f9f9f9;
 }
 footer {
+    flex-shrink: 0; 
     background-color: black;
     padding: 5px;
     text-align: center;
     color: white;
+}
+.perfil {
+    width: 48px;
+    height: 48px;
+}
+
+.notificaciones {
+    width: 43px;
+    height: 43px;
+    margin-right: 1rem;
+}
+
+.logos-aside {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+.aside-tiles {
+    display: flex;
+    margin-left: 1rem;
+}
+.aside-tiles:hover {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+.logos-aside {
+    width: 2rem;
+    height: 2rem;
+    align-self: anchor-center;
+    margin-bottom: 8px;
+}
+.background-table {
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    max-width: 80%;
+}
+.estado {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    min-width: 80px;
+}
+
+.asistio {
+    background-color: #28a745;
+    color: white;
+    width: 6.5rem;
+}
+
+.pendiente {
+    background-color: #f0ad4e;
+    color: white;
+    width: 6.5rem;
+}
+
+.cancelada {
+    background-color: #d9534f;
+    color: white;
+    width: 6.5rem;
+}
+
+.atender-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem; 
+    border-radius: 20px; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    font-weight: 500;
+    width: 7rem;
+    height: 2.5rem;
+}
+
+.atender-btn:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.atender-btn i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease; 
+}
+
+.atender-btn:hover i {
+    transform: translateX(5px); 
 }
