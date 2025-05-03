@@ -1,35 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>DentisApp</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DentisApp</title>
+  <link rel="stylesheet" href="./css/login.css" />
 </head>
 <body>
-    <div class="login-container">
+<header class="navbar">
+    <div class="logo">DentisApp</div>
+    <nav>
+    <a href="#">¿Quienes somos?</a>
+    <a href="#">Planes</a>
+    <a href="#">Contacto</a>
+    <button class="nav-login">Iniciar sesión</button>
+    </nav>
+</header>
+
+<main class="main-container">
+    <section class="info-section">
     <h1>DentisApp</h1>
-    <form>
-        <div class="form-group">
-        <label for="usuario">Usuario</label>
-        <input type="text" id="usuario" name="usuario" required />
-        </div>
+    <p>
+        Es la solución perfecta para modernizar tu consultorio odontológico: crea historias clínicas en segundos, agenda y organiza citas fácilmente, gestiona consentimientos informados y accede al historial de tus pacientes desde un solo lugar. Todo de forma rápida, segura y sin complicaciones. Simplifica tu práctica diaria y lleva la atención al siguiente nivel con la app pensada especialmente para odontólogos que buscan eficiencia y tranquilidad.
+    </p>
+    </section>
 
-        <div class="form-group">
-        <label for="contrasena">Contraseña</label>
-        <input type="password" id="contrasena" name="contrasena" required />
-        </div>
-
-        <div class="form-group">
-        <label for="rol">Ingresar como:</label>
-        <select id="rol" name="rol" required>
-            <option value="">Selecciona una opción</option>
-            <option value="doctor">Doctor</option>
-            <option value="paciente">Paciente</option>
-        </select>
-        </div>
-        <button type="submit" class="login-btn">Iniciar Sesión</button>
-    </form>
+    <section class="form-section">
+    <div class="tabs">
+        <button class="tab active">Doctor</button>
+        <button class="tab">Paciente</button>
     </div>
+
+    <form class="login-form">
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" placeholder="Digite su correo" required />
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" placeholder="Digite su contraseña" required />
+
+        <button type="submit">Iniciar sesión</button>
+
+        <a href="#" class="link">Recuperar contraseña</a>
+        <p class="without-account">¿No tienes una cuenta aún?</p>
+        <button class="register-btn" type="button">Registro</button>
+    </form>
+    </section>
+</main>
+<footer class="footer">
+    © 2025 Dentisapp. All rights reserved.
+</footer>
 </body>
 </html>
