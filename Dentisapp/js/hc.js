@@ -8,7 +8,7 @@ document.getElementById('fecha-nacimiento').addEventListener('change', function(
         edad--;
     }
     
-    document.getElementById('edad').value = edad + ' años';
+    document.getElementById('edad').value = edad + ' aÃ±os';
 });
 
 //function googlesheets(){
