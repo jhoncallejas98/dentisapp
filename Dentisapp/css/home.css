@@ -11,7 +11,7 @@ body {
 
 .header {
     background-color: #f3e8e1;
-    padding: 20px;
+    padding: 10px;
 }
 
 .navbar {
@@ -56,7 +56,7 @@ body {
     padding: 0.3rem 0.6rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     width: 27rem;
-    height: 2.7rem;
+    height: 2rem;
 }
 
 .search-input {
@@ -101,7 +101,7 @@ body {
 }
 
 .aside-bar h2 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
     text-align: justify;
     margin-left: 1rem;
@@ -115,14 +115,11 @@ body {
     margin-top: 3rem;
     margin-bottom: 1rem;
 }
-.profile-image {
-    width: 60%;
-    align-self: center;
-}
+
 .aside-bar p {
     margin: 1rem;
     align-self: center;
-
+    font-size: 1rem;
 }
 
 .configuration {
@@ -167,9 +164,9 @@ main {
 
 .table-patiente {
     display: flex;
-    gap: 4rem;
     justify-self: center;
     width: 100%;
+    margin-left: 5rem;
 }
 table {
     width: 100%; 
@@ -179,8 +176,10 @@ table {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px; 
     overflow: hidden; 
-    min-width: 600px;
+    min-width: 900px;
     max-width: 100%;
+    justify-self: center;
+
 }
 
 th, td {
@@ -188,10 +187,11 @@ th, td {
     text-align: left;
     border-bottom: 1px solid #e0e0e0; 
     white-space: nowrap;
+    font-size: 1rem;
 }
 
 thead {
-    background-color: #f0f0f0;
+    background-color: #f3e8e1;
 }
 
 tbody tr:hover {
@@ -200,38 +200,39 @@ tbody tr:hover {
 footer {
     flex-shrink: 0; 
     background-color: black;
-    padding: 5px;
+    padding: 3px;
     text-align: center;
     color: white;
+    font-size: 0.8rem;
 }
 .perfil {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
 }
 
 .notificaciones {
-    width: 43px;
-    height: 43px;
+    width: 37px;
+    height: 37px;
     margin-right: 1rem;
 }
 
 .logos-aside {
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .aside-tiles {
     display: flex;
     margin-left: 1rem;
     text-decoration: none;
     color: black;
-    padding: 0.5rem;
+    padding: 0rem;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 
 .aside-tiles:hover {
-    background-color: #e0e0e0;
-    border-radius: 8px;
+    background-color: #999999;
+    border-radius: 10px;
     padding: 0.5rem;
     transition: all 0.3s ease;
 }
@@ -255,12 +256,12 @@ footer {
 }
 
 .background-table {
-    background-color: #F0F0F0;
+    background-color: #fff;
     border-radius: 8px;
     padding: 1rem;
     margin-top: 2rem;
     margin-right: 2rem;
-    max-width: 80%;
+    max-width: 60%;
 }
 .estado {
     padding: 0.5rem 1rem;

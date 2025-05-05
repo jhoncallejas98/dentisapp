@@ -7,16 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-}
-
-.wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-container {
-    flex: 1;
+    font-size: 80%;
 }
 
 /* Navbar */
@@ -36,7 +27,7 @@ body {
 
 .navbar nav {
     display: flex;
-    gap: 15rem;
+    gap: 8rem;
     align-items: center;
 }
 
@@ -48,6 +39,7 @@ body {
     border-radius: 999px;
     font-weight: 500;
     transition: background-color 0.25s ease, color 0.25s ease;
+    font-size: 1rem;
 }
 
 .navbar a:hover {
@@ -84,18 +76,18 @@ body {
     justify-content: center;
     align-items: center;
     padding: 4rem 2rem;
-    gap: 25rem;
-    flex-wrap: wrap;
+    gap: 20rem;
+    flex: 1;
 }
 
 /* Info */
 .info-section {
-    max-width: 600px;
+    max-width: 500px;
     margin-top: -10rem;
 }
 
 .info-section h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 2rem;
     justify-self: center;
 }
@@ -111,8 +103,9 @@ body {
     padding: 2rem;
     border-radius: 10px;
     max-width: 550px;
+    min-width: 500px;
     width: 100%;
-    min-height: 500px;
+    min-height: 450px;
 }
 
 .tabs {
@@ -244,6 +237,7 @@ body {
         padding: 0;
         text-align: center;
         margin: 0;
+        min-width: 300px;
     }
 
     .info-section {
@@ -360,9 +354,13 @@ body {
     .menu a:hover {
         background: rgba(0,0,0,0.05);
     }
+    .form-section {
+       
+    }
+    
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
     body {
         font-size: 1rem;
     }
@@ -442,7 +440,7 @@ body {
         align-items: center;
         padding: 0.5rem 0;
         gap: 3.5rem;
-        margin-left: 6rem;
+        margin-left: 9rem;
         margin-right: 9rem;
     }
 
@@ -645,6 +643,7 @@ body {
 
     .form-section {
         padding: 0.9rem;
+        margin-left: 2rem;
     }
 
     .tabs {
@@ -730,6 +729,7 @@ body {
 
     .form-section {
         padding: 1rem;
+        margin-left: 2rem;
     }
 
     .tabs {
