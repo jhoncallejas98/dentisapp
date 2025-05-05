@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-    background-color: #f8f9fa;
+    background-color: #f3e8e1;
     padding: 20px;
 }
 
@@ -95,7 +95,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    background-color: #F0F0F0;
+    background-color: #e9dcd2;
     width: 25%;
     min-width: 300px;
 }

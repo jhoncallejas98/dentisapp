@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
 }
+
 .wrapper {
     min-height: 100vh;
     display: flex;
@@ -18,9 +19,9 @@ body {
     flex: 1;
 }
 
-  /* Navbar */
+/* Navbar */
 .navbar {
-    background-color: #f1e3db;
+    background-color: #f3e8e1;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -39,22 +40,31 @@ body {
 }
 
 .navbar a {
+    position: relative;
     text-decoration: none;
     color: #333;
-}
-
-.nav-login {
-    background-color: gray;
-    border: none;
-    padding: 1rem 2.5rem;
+    padding: 0.5rem 1.2rem;
     border-radius: 999px;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-  /* Main layout */
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #000;
+}
+
+.navbar a.active {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #000;
+}
+
+.page-login .iniciar-sesion-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+/* Main layout */
 .main-container {
     display: flex;
     justify-content: center;
@@ -64,7 +74,7 @@ body {
     flex-wrap: wrap;
 }
 
-  /* Info */
+/* Info */
 .info-section {
     max-width: 600px;
     margin-top: -10rem;
@@ -81,7 +91,7 @@ body {
     line-height: 1.6;
 }
 
-  /* Form */
+/* Form */
 .form-section {
     background-color: #eadbd0;
     padding: 2rem;
@@ -114,7 +124,7 @@ body {
     color: #fff;
 }
 
-  /* Form */
+/* Form */
 .login-form {
     display: flex;
     flex-direction: column;
@@ -162,7 +172,7 @@ body {
     margin-top: 1rem;
 }
 
-  /* Footer */
+/* Footer */
 .footer {
     text-align: center;
     padding: 1rem;
