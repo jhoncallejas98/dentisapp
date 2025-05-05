@@ -2,6 +2,12 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
 }
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .plans-section {
     padding: 2rem 1rem;
